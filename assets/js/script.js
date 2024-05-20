@@ -1,6 +1,6 @@
-function scrollToTop() {
+function scrollToTop(top = 0) {
   window.scrollTo({
-    top: 0,
+    top: top,
     left: 0,
     behavior: "smooth",
   });
@@ -10,6 +10,10 @@ function scrollToTop() {
 document.getElementById("home-link").addEventListener("click", function (e) {
   e.preventDefault();
   scrollToTop();
+});
+document.getElementById("about-link").addEventListener("click", function (e) {
+  e.preventDefault();
+  scrollToTop(window.innerHeight);
 });
 
 function toggleMenu() {
