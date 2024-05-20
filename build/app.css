@@ -1125,6 +1125,10 @@ video {
   transition-duration: 150ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mountains {
   position: absolute;
   width: 100%;

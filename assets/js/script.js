@@ -1,3 +1,25 @@
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
+// Add this event listener to the link that should trigger the scroll
+document.getElementById("home-link").addEventListener("click", function (e) {
+  e.preventDefault();
+  scrollToTop();
+});
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  if (menu.style.left === "0px") {
+    menu.style.left = "-128px";
+  } else {
+    menu.style.left = "0px";
+  }
+}
 // function getRandomAngle() {
 //   return Math.random() * 360;
 // }
@@ -53,11 +75,3 @@
 //   placeCharacterInGrid(character, gridContainer);
 // });
 // }
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  if (menu.style.left === "0px") {
-    menu.style.left = "-128px";
-  } else {
-    menu.style.left = "0px";
-  }
-}
