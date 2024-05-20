@@ -656,6 +656,10 @@ video {
   z-index: 55;
 }
 
+.z-\[15\] {
+  z-index: 15;
+}
+
 .order-1 {
   order: 1;
 }
